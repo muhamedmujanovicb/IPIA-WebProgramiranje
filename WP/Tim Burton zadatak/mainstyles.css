@@ -1,0 +1,251 @@
+body {
+            background-color: #080409;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(255, 102, 0, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(128, 0, 128, 0.1) 0%, transparent 40%),
+                linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+            background-size: 100% 100%, 100% 100%, 40px 40px, 40px 40px;
+            color: #f3f3f3;
+        }
+
+        header > h1 {
+            color: #f5c518; 
+            text-align: center;
+            font-family: Arial, sans-serif;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(255, 102, 0, 0.4);
+        }
+
+        #main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #120e14;
+            border: 1px solid #ff6600;
+            box-shadow: 0 0 20px rgba(255, 102, 0, 0.25);
+            border-radius: 8px;
+            color: #f3f3f3;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #title {
+            font-size: 150%;
+            padding-top: 50px;
+        }
+
+        #title h1 {
+            color: #ff6600;
+            text-shadow: 0 0 8px rgba(255, 102, 0, 0.5);
+        }
+
+        #title p {
+            color: #f5c518; 
+        }
+
+        #img-div {
+            margin: 30px auto;
+            padding: 15px;
+            background-color: #1a141d;
+            border: 1px solid #332233;
+            border-radius: 8px;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+
+        #image {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 4px;
+        }
+
+        #img-caption {
+            margin-top: 12px;
+            font-size: 0.6em;
+            color: #cccccc;
+            line-height: 1.4;
+        }
+
+        #tribute-info {
+            width: 60%;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #18121c;
+            border-left: 4px solid #ff6600;
+        }
+
+        #tribute-info h3 {
+            color: #f5c518;
+            margin-top: 0;
+        }
+
+        #tribute-info ul {
+            line-height: 1.8;
+            padding-left: 20px;
+        }
+
+        #tribute-info li strong {
+            color: #ff6600;
+        }
+
+        #tribute-info:not(h3) {
+            text-align: left;
+        }
+
+        footer h3 {
+            padding: 5px;
+            line-height: 1.5rem;
+            color: #ff6600;
+        }
+
+        @media (max-width: 750px) {
+            #tribute-info {
+                width: 90%;
+            }
+        }
+
+        .walk-of-fame-quote {
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #18121c;
+            border: 1px solid #332233;
+            border-radius: 6px;
+        }
+
+        .walk-of-fame-img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        .timeline-credit {
+            margin: 20px 0;
+            color: #aaaaaa;
+        }
+
+        .timeline-credit a, #tribute-link {
+            color: #ff6600;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .timeline-credit a:hover, #tribute-link:hover {
+            color: #f5c518;
+            text-decoration: underline;
+        }
+
+        #sidebarMenu {
+            height: 100%;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 260px;
+            margin-top: 0;
+            transform: translateX(-260px);
+            transition: transform 300ms ease-in-out;
+            background: #110d14;
+            border-right: 2px solid #ff6600;
+            box-shadow: 5px 0 20px rgba(255, 102, 0, 0.15);
+            z-index: 99;
+        }
+
+        .sidebarMenuInner {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .sidebarMenuInner li {
+            color: #f5c518;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            border-bottom: 1px solid #221822;
+            background-color: #16101a;
+        }
+
+        .sidebarMenuInner li span {
+            display: block;
+            font-size: 12px;
+            color: #ff6600;
+            letter-spacing: 1px;
+            margin-top: 4px;
+        }
+
+        .sidebarMenuInner li a {
+            color: #e0e0e0;
+            text-decoration: none;
+            display: block;
+            transition: color 0.2s ease;
+        }
+
+        .sidebarMenuInner li a:hover {
+            color: #ff6600;
+            text-shadow: 0 0 8px rgba(255, 102, 0, 0.6);
+        }
+
+        input[type="checkbox"].openSidebarMenu {
+            display: none;
+        }
+
+        .sidebarIconToggle {
+            transition: all 0.3s;
+            cursor: pointer;
+            position: fixed;
+            z-index: 100;
+            height: 24px;
+            width: 24px;
+            top: 25px;
+            left: 20px;
+        }
+
+        .spinner {
+            transition: all 0.3s;
+            position: absolute;
+            height: 3px;
+            width: 100%;
+            background-color: #ff6600;
+            box-shadow: 0 0 5px #ff6600;
+        }
+
+        .horizontal {
+            position: relative;
+            float: left;
+            margin-top: 7px;
+        }
+
+        .diagonal.part-1 {
+            position: relative;
+            float: left;
+        }
+
+        .diagonal.part-2 {
+            position: relative;
+            float: left;
+            margin-top: 7px;
+        }
+
+        input[type="checkbox"]:checked ~ #sidebarMenu {
+            transform: translateX(0);
+        }
+
+        input[type="checkbox"]:checked ~ .sidebarIconToggle > .horizontal {
+            opacity: 0;
+        }
+
+        input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+            transform: rotate(135deg);
+            margin-top: 10px;
+        }
+
+        input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+            transform: rotate(-135deg);
+            margin-top: -10px;
+        }
